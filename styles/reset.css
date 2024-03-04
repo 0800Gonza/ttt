@@ -1,0 +1,50 @@
+/* Reset.css */
+
+/* Reset box-sizing */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Reset margin y padding */
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, figure, figcaption, blockquote, dl, dd, dt, hr, fieldset {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reset list-style */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* Reset link styles */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Reset table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Reset button styles */
+  button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+  }

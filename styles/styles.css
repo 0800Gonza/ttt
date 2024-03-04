@@ -1,0 +1,44 @@
+body {
+  transition: background-color 0.5s ease;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  outline: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(49, 49, 47);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+#wrapperheader ul {
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#wrapperheader li {
+  display: inline;
+  margin: 0px;
+  padding: 10px;
+}
