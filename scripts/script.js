@@ -11,3 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
     });
   });
+  function redirigir() {
+    window.location.href = "contacto.html";
+  }
+  
