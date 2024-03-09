@@ -1,36 +1,66 @@
-$(document).ready(function(){
-    $('.carousel').slick({
-        autoplay: true,
-        autoplaySpeed: 1500, // Cambia esto para ajustar la velocidad (en milisegundos)
-        dots: true, // Muestra los puntos de navegación
-        arrows: false // Oculta las flechas de navegación (puedes cambiarlo según tu preferencia)
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    // Mostrar la ventana modal al cargar la página
+    openModal();
+
+    // Event listener para el botón de cambio de tema
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', toggleTheme);
 });
 
-var prevScrollpos = window.pageYOffset;
-
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-
-    // Muestra u oculta el header y la lista al hacer scroll
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("wrapperheader").style.top = "0";
-        document.getElementById("listas").style.top = "60px";
-    } else {
-        document.getElementById("wrapperheader").style.top = "-60px";
-        document.getElementById("listas").style.top = "0";
-    }
-
-    prevScrollpos = currentScrollPos;
+function openModal() {
+    // Muestra la ventana modal
+    document.getElementById('myModal').style.display = 'block';
 }
 
-$(document).ready(function(){
-    $('.product-carousel').slick({
-        slidesToShow: 3, // Número de tarjetas a mostrar
-        slidesToScroll: 1, // Número de tarjetas a desplazar
+function closeModal() {
+    // Cierra la ventana modal
+    document.getElementById('myModal').style.display = 'none';
+}
+
+function toggleTheme() {
+    // Cambia el tema al hacer clic en el botón
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+    body.classList.toggle('light-theme');
+
+    // Cambia el ícono de acuerdo al tema actual
+    const isDarkMode = body.classList.contains('dark-theme');
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.innerHTML = isDarkMode ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+}
+
+
+$(document).ready(function() {
+    console.log("Documento cargado");
+
+    $('.carousel').slick({
         autoplay: true,
-        autoplaySpeed: 3000, // Cambia esto para ajustar la velocidad (en milisegundos)
+        autoplaySpeed: 1500,
+        dots: true,
+        arrows: false
+    });
+
+    $('.product-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
         dots: true,
         arrows: false
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+  
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        body.classList.toggle('light-theme');
+  
+        // Cambia el ícono de acuerdo al tema actual
+        const isDarkMode = body.classList.contains('dark-theme');
+        themeToggle.innerHTML = isDarkMode ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+    });
+  });
+  
+  
