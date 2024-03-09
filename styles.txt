@@ -1,0 +1,167 @@
+body {
+  transition: background-color 0.5s ease;
+  margin: 0;
+  font-family: Arial, sans-serif; 
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  outline: none;
+}
+header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(49, 49, 47);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+#wrapperheader ul {
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#wrapperheader li {
+  display: inline;
+  margin: 0px;
+  padding: 10px;
+}
+footer {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 49, 47);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+#a {
+  text-decoration: none;
+}
+main {
+  padding: 10px;
+  margin: 10px;
+}
+#wrappermain h1 {
+  color: rgb(126, 102, 233);
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+#wrappermain p {
+  color: rgb(255, 249, 249);
+  text-align: center;
+  margin: 2%;
+  padding: 0%;
+}
+#asd {  
+  background-color: rgb(49, 49, 47);
+  padding: 0px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.contenedortarjetas1 {
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Espaciado uniforme entre las tarjetas */
+  padding: 20px;
+}
+.contenedortarjetas2 {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Espaciado uniforme entre las tarjetas */
+  padding: 20px;
+}
+.tarjeta {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
+  flex: 0.2; /* Distribuir el espacio uniformemente entre las tarjetas */
+  color: rgb(197, 135, 20);
+  background-color: rgb(15, 15, 15);
+  border: 3px solid #070707;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  animation: flash; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+.tarjeta:hover,
+.tarjeta2:hover,
+.tarjeta3:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Color de fondo cuando se pasa el ratón por encima */
+}
+
+
+.tarjeta img,
+.tarjeta2 img,
+.tarjeta3 img {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
+  max-width: 120px; /*height: auto; /* Ajustar la altura máxima según tus necesidades */
+  object-fit: cover;
+  border-radius: 8px; /* Agregar bordes redondeados a las imágenes */
+  margin-bottom: 10px; /* Espaciado inferior entre la imagen y el título */
+  animation: flash; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+.descripcion {
+  display: flex;
+flex-wrap: wrap;
+}
+
+BOTON DE BUSQUEDA
+#wrapperheader section {
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+}
+.search-container {
+  text-align: center;
+  margin: 20px;
+}
+#search-input {
+  border-color: transparent;
+  padding: 10px;
+  width: 200px;
+  font-size: 18px;
+}
+.search-container button {
+  background: royalblue;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  padding: 0 10px;
+  position: relative;
+  cursor: pointer;
+  width: 75px;
+  height: 35px;
+}
+
+#search-results {
+  border-color: transparent;
+  margin-top: 20px;
+}

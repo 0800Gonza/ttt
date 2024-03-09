@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    </head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pequeños sueños liz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/a009e97091.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="light-theme">
-
-        <header id="wrapperheader" >
-            <h1>Pequeños sueños Liz</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <button id="themeToggle">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                    <script src="/scripts/script.js" defer></script>
-                </ul>
-            </nav>
-        </header>
-        <main id="wrappermain" >
-            <h1>Pequeños sueños Liz</h1>
-        <div class="contenedortarjetas">
-        <div class="tarjeta" onclick="redirigir()">
-            <div class="descripcion">
-            <img src="./assets/IMG-20240303-WA0064.jpg" alt="Descripción de la imagen">
+    <script src="/scripts/index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <header id="wrapperheader">
+        <div class="div1"><img src="/assets/Screenshot_1(1).png" alt="Image Not Found" class="logo"></div>
+</header>      
+        <nav class="listas" id="listas">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Bazar</a></li>
+                <li><a href="#services">Libreria</a></li>
+                <li><a href="#contact">Jugueteria</a></li>
+                <li><a href="Regalos">Regalos</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="carousel-container">
+            <div class="carousel">
+                <div><img src="/assets/IMG-20240303-WA0068.jpg" alt="Imagen 1"></div>
+                <div><img src="/assets/IMG-20240303-WA0065.jpg" alt="Imagen 2"></div>
+                <!-- Agrega más imágenes según sea necesario -->
             </div>
-          </div>
-          <script src="script.js"></script>
-        </main>
-        <div id="descripcion" >
-            <h1>a</h1>
         </div>
-        <footer>
-            <p>Industrias Madereras HECIMOVIC</p>
-        </footer>
-            
-
-
+        <div class="metodos">
+            <img src="/assets/yape.png" alt="Yape">
+            <img src="/assets/bim.png" alt="Bim">
+        </div>
+        <div class="productos">
+            <h1>Todo para el cole ✏️</h1>
+            <div class="product-carousel">
+                <div class="product-card">
+                    <img src="/assets/IMG-20240303-WA0069.jpg" alt="Producto 1">
+                    <h3>Mochilas</h3>
+                    <p>$20.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="producto2.jpg" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>$25.00</p>
+                </div>
         
-        
-        
-        
-        
-        
-        
-        
-        
-    </body>
+        </div>
+    </main>
+</body>
 </html>
